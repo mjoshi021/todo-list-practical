@@ -1,0 +1,53 @@
+<ng-container [ngSwitch]="name">
+  <!-- password eye icon start -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+    *ngSwitchCase="'passwordEye'">
+    <path
+      d="M10.3866 7.99995C10.3866 9.31995 9.31995 10.3866 7.99995 10.3866C6.67995 10.3866 5.61328 9.31995 5.61328 7.99995C5.61328 6.67995 6.67995 5.61328 7.99995 5.61328C9.31995 5.61328 10.3866 6.67995 10.3866 7.99995Z"
+      stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round" />
+    <path
+      d="M7.9999 13.5133C10.3532 13.5133 12.5466 12.1266 14.0732 9.72665C14.6732 8.78665 14.6732 7.20665 14.0732 6.26665C12.5466 3.86665 10.3532 2.47998 7.9999 2.47998C5.64656 2.47998 3.45323 3.86665 1.92656 6.26665C1.32656 7.20665 1.32656 8.78665 1.92656 9.72665C3.45323 12.1266 5.64656 13.5133 7.9999 13.5133Z"
+      stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+    *ngSwitchCase="'passwordEyeHide'">
+    <path
+      d="M9.68661 6.31328L6.31328 9.68661C5.87995 9.25328 5.61328 8.65995 5.61328 7.99995C5.61328 6.67995 6.67995 5.61328 7.99995 5.61328C8.65995 5.61328 9.25328 5.87995 9.68661 6.31328Z"
+      stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round" />
+    <path
+      d="M11.8799 3.84669C10.7132 2.96669 9.3799 2.48669 7.9999 2.48669C5.64656 2.48669 3.45323 3.87336 1.92656 6.27336C1.32656 7.21336 1.32656 8.79336 1.92656 9.73336C2.45323 10.56 3.06656 11.2734 3.73323 11.8467"
+      stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round" />
+    <path
+      d="M5.61328 13.0201C6.37328 13.3401 7.17995 13.5134 7.99995 13.5134C10.3533 13.5134 12.5466 12.1267 14.0733 9.72674C14.6733 8.78674 14.6733 7.20674 14.0733 6.26674C13.8533 5.92008 13.6133 5.59341 13.3666 5.28674"
+      stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M10.34 8.46667C10.1666 9.40667 9.39996 10.1733 8.45996 10.3467" stroke="#A9A9A9" stroke-linecap="round"
+      stroke-linejoin="round" />
+    <path d="M6.31325 9.68665L1.33325 14.6666" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M14.6668 1.33337L9.68677 6.31337" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+  <!-- password eye icon end -->
+
+  <!-- edit icon start  -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000"
+    stroke-width="1" stroke-linecap="round" stroke-linejoin="round" *ngSwitchCase="'editicon'">
+    <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
+    <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
+  </svg>
+  <!-- edit icon end  -->
+
+  <!-- delete icon start  -->
+
+  <svg *ngSwitchCase="'deleteicon'" width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M7 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2h4a1 1 0 1 1 0 2h-1.069l-.867 12.142A2 2 0 0 1 17.069 22H6.93a2 2 0 0 1-1.995-1.858L4.07 8H3a1 1 0 0 1 0-2h4V4zm2 2h6V4H9v2zM6.074 8l.857 12H17.07l.857-12H6.074zM10 10a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0v-6a1 1 0 0 1 1-1zm4 0a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0v-6a1 1 0 0 1 1-1z"
+      fill="red" />
+  </svg>
+  <!-- delete icon end  -->
+
+</ng-container>

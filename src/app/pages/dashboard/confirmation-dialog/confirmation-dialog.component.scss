@@ -1,0 +1,17 @@
+.confirmation-dialog{
+    padding: 20px;
+
+    h2{
+        text-align: center;
+    }
+    mat-dialog-content{
+        text-align: center;
+    }
+    mat-dialog-actions{
+        justify-content: center;
+    }
+}    
+button {
+    min-width: 100px;
+    margin-right: 8px;
+  }

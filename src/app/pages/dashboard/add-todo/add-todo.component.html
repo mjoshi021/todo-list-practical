@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="header">
+    <div class="img-section">
+      <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+    </div>
+    <p class="back-link" (click)="onBackClick()">
+      <mat-icon>arrow_back</mat-icon> Back to List
+    </p>
+  </div>
+
+  <div class="form-card">
+    <form [formGroup]="reactiveForm">
+      <div class="form-group">
+        <!-- Title Input -->
+        <div class="w-30 field-section">
+          <label>Title</label>
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="Enter Title" formControlName="title">
+            <mat-error *ngIf="errorHandling('title', 'required')">
+              Please enter a title of todo.
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <!-- Description Input -->
+        <div class="w-30 field-section">
+          <label>Description</label>
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="Enter Description" formControlName="description">
+            <mat-error *ngIf="errorHandling('description', 'required')">
+              Please enter a description of todo.
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <!-- Is Completed Toggle -->
+        <div class="toggle-container field-section w-30">
+          <label>Is Completed</label>
+          <div class="toggle-btn">
+            <span>False</span>
+            <mat-slide-toggle formControlName="isCompleted" color="primary"></mat-slide-toggle>
+            <span>True</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="button-group">
+        <button mat-stroked-button (click)="onCancelClick()">Cancel</button>
+        <button mat-raised-button color="primary" (click)="onSaveClick()">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

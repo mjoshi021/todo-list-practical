@@ -1,0 +1,82 @@
+.outer {
+  display: flex;
+  align-items: center;
+  & > div {
+    height: 100%;
+    flex: 1;
+  }
+
+  .left-content {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    h1{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 2.625rem;
+      line-height: 3.25rem;
+      max-width: 22.5rem;
+    }
+    .left-bg-img{
+      width: 100%;
+      height: 100vh;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+  .right-content {
+    width: 50%;
+    .right-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .login-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 31.25rem;
+        .custom-outline{
+          width: 100%;
+        }
+      }
+      .btn-section{
+        margin-top: 1.25rem;
+        .login-button{
+          padding: 0.625rem 1.875rem;
+          border: none;
+          background-color: #0374f4;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          font-weight: 500;
+          color: #fff;
+          cursor: pointer;
+          border-radius: 3.125rem;
+        }
+      }
+    }
+    .page-title{
+      font-size: 2.25rem;
+      line-height: 2.625rem;
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+    }
+    .logo-link {
+      margin: 0 auto 3.75rem auto;
+      width: 9.375rem;
+      height: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

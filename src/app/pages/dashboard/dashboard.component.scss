@@ -1,0 +1,58 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .img-section{
+            height: 80px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+         }
+         .logout-button {
+          margin-left: 30px;
+         }
+    }
+
+    .table-section{
+        overflow: auto;
+        max-height: calc(100vh - 12rem);
+        .custom-table {
+          width: 100%;
+          border: 1px solid #dfdfdf;
+          margin-bottom: 0;
+          box-shadow: unset;
+          border-radius: 5px;
+        }
+      }
+}
+
+
+
+.logo {
+    height: 50px;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-icon-button {
+    margin: 0 5px;
+}
+
+.mat-paginator {
+    margin-top: 20px;
+}
+
+.no-data-row{
+    height: 75px;
+}

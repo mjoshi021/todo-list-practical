@@ -1,0 +1,70 @@
+<div class="outer">
+  <div class="left-content">
+    <h1>Welcome to Simbiotik Tech </h1>
+    <div class="left-bg-img">
+      <img src="./assets/images/auth-bg.jpg"/>
+    </div>
+  </div>
+<div class="right-content">
+  <div class="right-section">
+    <a href="#" class="logo-link">
+      <img
+        src="./assets/images/logo.png"
+        tite="tibicle"
+        class="logo"
+      />
+    </a>
+    <h1 class="page-title">
+      Login
+    </h1>
+    <form class="login-form" [formGroup]="reactiveForm">
+      <mat-form-field class="custom-outline bottom-outline">
+        <mat-label>UserID</mat-label>
+        <input
+          matInput
+          type="text"
+          formControlName="username"
+          (keyup.enter)="focusPassword()"
+        />
+        <mat-error *ngIf="errorHandling('username', 'required')">
+          Please enter UserId
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="custom-outline button-spacing bottom-outline">
+        <mat-label>Password</mat-label>
+        <input
+        #password
+          matInput
+          [type]="hide ? 'password' : 'text'"
+          formControlName="password"
+          (keyup.enter)="onEnterPassword()"
+        />
+        <mat-icon class="mat-icon" matSuffix>
+          <app-icon
+            *ngIf="!hide"
+            name="passwordEye"
+            class="svg-icon"
+            (click)="hide = !hide"
+          >
+          </app-icon>
+          <app-icon
+            *ngIf="hide"
+            name="passwordEyeHide"
+            class="svg-icon"
+            (click)="hide = !hide"
+          >
+          </app-icon>
+        </mat-icon>
+        <mat-error *ngIf="errorHandling('password', 'required')">
+          Please enter Password
+        </mat-error>
+      </mat-form-field>
+    </form>
+    <div class="btn-section">
+      <button mat-raised-button color="primary" class="login-button" (click)="onLoginClick()" >Login</button>
+
+    </div>
+  </div>
+</div>
+</div>
